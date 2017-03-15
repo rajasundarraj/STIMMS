@@ -1,0 +1,71 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+<script src="js/base.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" type="text/css"> 
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.semanticui.min.css" type="text/css"> 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/dataTables.semanticui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/data.js"></script>
+<style>
+    .pusher{
+        padding-top: 0px;
+    }
+</style>
+</head>       
+<body ng-app="myApp4">
+<div ng-include="'header.html'"></div>
+    <div class="pusher">
+        <div class="ui container" ng-controller="exams">
+            
+            <h3 class="ui header">Exam Details</h3>
+            <div class="ui divider"></div>
+             <div>
+							<form action="#">
+                            Choose Exam:
+		                    <input list="plan" type="text" style="padding:15px;" >
+ 								<datalist id="plan">
+								    <option value="I mid term"></option>
+								    <option value="II mid term"></option>
+								    <option value="III mid term"></option>
+				                </datalist>
+								From: <input type="date" name="bdaymonth" style="padding:15px;">
+                                To: <input type="date" name="bdaymonth" style="padding:15px;">
+								<button class="btn btn-primary">GO</button>
+				            </form>
+
+					</div>
+
+
+            <div class="ui hidden divider"></div>
+            
+            <table id="example" class="ui compact celled  table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th style="background:#581850; color:#fff;" ng-repeat="(header, values) in names[0]">{{ header }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="padding:10px;" ng-repeat="row in names | filter:searchText">
+                      <td ng-repeat="cell in row">{{ cell }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+    </div>      
+ <div ng-include="'footer.html'"></div>
+    <script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+    
+</script>  
+</body>
+</html>

@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" type="text/css"> 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.semanticui.min.css" type="text/css"> 
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/data.js"></script>
+    
+</head>       
+<body ng-app="">
+<div ng-include="'header.html'"></div>
+<div class="main">
+	
+	<div class="main-inner">
+
+	    <div class="container">
+	
+	      <div class="row">
+	      	
+	      	<div class="span12">      		
+	      		
+	      		<div class="widget ">
+	      			
+	      			<div class="widget-header">
+	      				<i class="icon-user"></i>
+	      				<h3>Manage Marks</h3>
+	  				</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+					 <div >
+							<form action="#">
+							  choose Exam:
+ 								<select id="hosting">
+								    <option value="CAT-I">CAT-I</option>
+								    <option value="CAT-II">CAT-II</option>
+								    <option value="CAT-III">CAT-III</option>
+								</select>
+								Class:
+ 								<select id="hosting">
+								    <option value="I">First</option>
+								    <option value="II">Second</option>
+								    <option value="III">Third</option>
+								</select>
+								Section:
+ 								<select id="hosting">
+								    <option value="A">A</option>
+								    <option value="B">B</option>
+								    <option value="C">C</option>
+								</select>
+								Subject:
+ 								<select id="hosting">
+								    <option value="Tamil">TAMIL</option>
+								    <option value="English">ENGLISH</option>
+								    <option value="Maths">MATHS</option>
+								     <option value="Science">SCIENCE</option>
+								      <option value="Social">SocialScience</option>
+								</select>
+								<button class="btn btn-primary">ManageMarks</button>
+ 
+							 </form>
+					</div>
+						 <div class="table-responsive">
+					        <table class="table table-bordered">
+					            <thead>
+					                <tr>
+					                    <th>Roll No</th>
+					                    <th>Name</th>
+					                    <th>Marks</th>
+					                    <th>Comment</th>
+                                        <th>Attendance</th>
+                                        <th>Review</th>
+					                </tr>
+					            </thead>
+					            <tbody>
+					                <tr>
+					                    <td>501</td>
+					                    <td>Raja</td>
+					                    <td>98</td>
+					                    <td>good</td>
+					                    <td><div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">P</label>
+					                 </div>
+					                 <div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">A</label>
+					                 </div>
+					                 <div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">L</label>
+					                 </div>
+					                 </td>
+
+					                    <td><input type="text" class="form" /></td>
+					                </tr>
+					                <tr>
+					                    <td>502</td>
+					                    <td>pooja</td>
+					                    <td>88</td>
+					                    <td>good</td>
+					                   <td><div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">P</label>
+					                 </div>
+					                 <div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">A</label>
+					                 </div>
+					                 <div class="radio">
+					                     <label><input type="radio" id='regular' name="optradio">L</label>
+					                 </div>
+
+					                 </td>
+					                    <td><input type="text" class="form-control" /></td>
+					                </tr>
+
+					            </tbody>
+					        </table>
+					        <button type="button" class="btn">Save</button>	
+					        </div>
+					        </div>
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->
+	      		
+		    </div> <!-- /span8 -->
+	      </div> <!-- /row -->
+	
+	    </div> <!-- /container -->
+	    
+	</div>
+    
+    
+ <div ng-include="'footer.html'"></div>
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+<script src="js/base.js"></script> 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" type="text/css"> 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.semanticui.min.css" type="text/css"> 
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/data.js"></script>
+</head>       
+<body ng-app="">
+<div ng-include="'header.html'"></div>
+<div class="main">
+<div class="main-inner">
+    <div class="container">
+	  <div class="row">
+	      	<div class="span12">      		
+	      		<div class="widget ">
+	      			<div class="widget-header">
+	      				<i class="icon-user"> View Attendance</i>
+	  				</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						 <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Attendance</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Raja</td>
+                    <td>12345</td>
+                    <td>
+                    <div class="radio">
+                     <label><input type="radio" id='regular' name="optradio">P</label>
+                     <label><input type="radio" id='regular' name="optradio">A</label>
+                     <label><input type="radio" id='regular' name="optradio">L</label>
+                    </div>
+                 </td>
+                    <td><input type="text" class="form" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Raja</td>
+                    <td>12345</td>
+                   <td><div class="radio">
+                     <label><input type="radio" id='regular' name="optradio">P</label>
+                     <label><input type="radio" id='regular' name="optradio">A</label>
+                     <label><input type="radio" id='regular' name="optradio">L</label>
+                 </div>
+                 </td>
+                    <td><input type="text" class="form-control" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-lg">Save</button>	
+        </div>
+        </div>
+</div> <!-- /widget-content -->		
+      </div> <!-- /widget -->
+	   </div> <!-- /span8 -->   	
+	      </div> <!-- /row -->
+	
+	    </div> <!-- /container -->
+</div>  
+<div ng-include="'footer.html'"></div>
+    
+    
+    
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+<script src="js/base.js"></script>  
+</body>
+</html>
